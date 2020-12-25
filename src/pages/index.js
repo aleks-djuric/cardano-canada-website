@@ -1,25 +1,43 @@
 import React from "react";
-import {createMemoryHistory} from "history";
-import {Route, Router, Switch} from "react-router-dom";
+import { graphql } from "gatsby"
 
-import "assets/scss/material-kit-react.scss?v=1.4.0";
-import 'typeface-roboto';
-import 'typeface-roboto-slab';
-// pages for this product
-import Components from "./Components/Components.jsx";
-import LandingPage from "./LandingPage/LandingPage.jsx";
-import ProfilePage from "./ProfilePage/ProfilePage.jsx";
-import LoginPage from "./LoginPage/LoginPage.jsx";
+import HomePage from "./HomePage/HomePage";
 
-let hist = createMemoryHistory();
-
-export default () => (
-  <Router history={hist}>
-    <Switch>
-      <Route path="/landing-page" component={LandingPage} />
-      <Route path="/profile-page" component={ProfilePage} />
-      <Route path="/login-page" component={LoginPage} />
-      <Route path="/" component={Components} />
-    </Switch>
-  </Router>
+export default ({ data, location }) => (
+  <HomePage data={data} location={location}/>
 );
+
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
+      nodes {
+        excerpt
+        fields {
+          slug
+          readingTime {
+            text
+          }
+        }
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
+          description
+          tags
+          featuredImage {
+            childImageSharp {
+              fluid(maxWidth: 800) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          featuredImagePath
+        }
+      }
+    }
+  }
+`

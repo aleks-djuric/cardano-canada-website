@@ -1,23 +1,3 @@
-/*!
-
- =========================================================
- * Material Kit React - v1.4.0 based on Material Kit - v2.0.2
- =========================================================
-
- * Product Page: https://www.creative-tim.com/product/material-kit-react
- * Copyright 2018 Creative Tim (https://www.creative-tim.com)
- * Licensed under MIT (https://github.com/creativetimofficial/material-kit-react/blob/master/LICENSE.md)
-
- =========================================================
-
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
- */
-
-// ##############################
-// // // Variables - Styles that are used on more than one component
-// #############################
-
 const drawerWidth = 260;
 
 const transition = {
@@ -60,17 +40,17 @@ const card = {
   boxShadow: "0 1px 4px 0 rgba(0, 0, 0, 0.14)",
   borderRadius: "3px",
   color: "rgba(0, 0, 0, 0.87)",
-  background: "#fff"
+  background: "#FFFFFF"
 };
 
 const defaultFont = {
-  fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
-  fontWeight: "300",
+  fontFamily: '"DM Sans", "Helvetica", "Arial", sans-serif',
+  fontWeight: "400",
   lineHeight: "1.5em"
 };
 
-const primaryColor = "#9c27b0";
-const warningColor = "#ff9800";
+const primaryColor = "#e00404";
+const warningColor = "#ffc400";
 const dangerColor = "#f44336";
 const successColor = "#4caf50";
 const infoColor = "#00acc1";
@@ -156,11 +136,10 @@ const defaultBoxShadow = {
 };
 
 const title = {
-  color: "#3C4858",
+  color: "#E00404",
   margin: "1.75rem 0 0.875rem",
-  textDecoration: "none",
-  fontWeight: "700",
-  fontFamily: `"Roboto Slab", "Times New Roman", serif`
+  fontWeight: "600",
+  fontFamily: '"DM Sans", "Helvetica", "Arial", sans-serif',
 };
 
 const cardTitle = {
@@ -180,7 +159,6 @@ const cardSubtitle = {
 };
 
 export {
-  //variables
   drawerWidth,
   transition,
   container,
