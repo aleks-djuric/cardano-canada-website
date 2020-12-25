@@ -39,7 +39,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     const slug = post.fields.slug
     actions.createPage({
       path: slug,
-      component: path.resolve(`src/pages/BlogPage/BlogPost.jsx`),
+      component: path.resolve(`src/components/BlogPage/BlogPost.jsx`),
       context: {
         slug: slug,
       },
@@ -52,8 +52,8 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   if (node.internal.type === "Mdx") {
     const value = createFilePath({ node, getNode })
     createNodeField({
-      name: "slug",
       node,
+      name: "slug",
       value: `/blog${value}`,
     })
   }

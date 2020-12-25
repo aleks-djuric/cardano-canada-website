@@ -1,13 +1,16 @@
 import React from "react";
 import { graphql } from "gatsby"
-import BlogPage from "./BlogPage/BlogPage";
+import BlogPage from "../components/BlogPage/BlogPage";
 
-export default ({ data, location }) => (
-  <BlogPage data={data} location={location}/>
-);
+export default (props) => {
+  const { data, location } = props;
+  return (
+    <BlogPage data={data} location={location}/>
+  );
+};
 
 export const query = graphql`
-  query {
+  query BlogPageQuery {
     site {
       siteMetadata {
         title
@@ -39,4 +42,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

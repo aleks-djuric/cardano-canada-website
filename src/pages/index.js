@@ -1,14 +1,17 @@
 import React from "react";
 import { graphql } from "gatsby"
 
-import HomePage from "./HomePage/HomePage";
+import HomePage from "../components/HomePage/HomePage";
 
-export default ({ data, location }) => (
-  <HomePage data={data} location={location}/>
-);
+export default (props) => {
+  const { data, location } = props;
+  return (
+    <HomePage data={data} location={location}/>
+  );
+};
 
 export const query = graphql`
-  query {
+  query HomePageQuery {
     site {
       siteMetadata {
         title

@@ -1,5 +1,5 @@
 import React from "react";
-import AboutPage from "./AboutPage/AboutPage";
+import AboutPage from "../components/AboutPage/AboutPage";
 
 export default () => (
   <AboutPage/>

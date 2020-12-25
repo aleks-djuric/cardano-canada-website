@@ -1,5 +1,5 @@
 import React from "react";
-import DashboardPage from "./DashboardPage/DashboardPage";
+import DashboardPage from "../components/DashboardPage/DashboardPage";
 
 export default () => (
   <DashboardPage/>
