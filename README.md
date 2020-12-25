@@ -1,9 +1,8 @@
-# [Gatsby Material Kit React Starter](https://amazing-jones-e61bda.netlify.com/)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FWebCu%2Fgatsby-material-kit-react.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FWebCu%2Fgatsby-material-kit-react?ref=badge_shield)
 
+<img style='vertical-align:middle;' src="src/assets/img/cardano-canada-logo.png" alt="Cardano Canada Logo" width="50"/>
+<h1 style='vertical-align:middle; display:inline;'>Cardano Canada </h1>
 
-Gatsby Material Kit React Starter is the adaptation of [Material Kit React](https://www.creative-tim.com/product/material-kit-react) to [Gatsby](https://www.gatsbyjs.org/).
- 
+<br>
+<br>
 
-## License
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FWebCu%2Fgatsby-material-kit-react.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FWebCu%2Fgatsby-material-kit-react?ref=badge_large)
+Cardano Canada website built using Gatsby + React.

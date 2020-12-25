@@ -17,7 +17,7 @@ class ProductSection extends React.Component {
     const { classes } = this.props;
     return (
       <div className={classes.section}>
-        <Grid container justify="center">
+        <Grid container justify="center" style={{marginBottom: 25}}>
           <Grid item style={{paddingBottom: 40}}>
             <Typography variant="h2" color="primary">
               Join a world-class staking experience
