@@ -5,20 +5,16 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-top-layout',
-    {
-      resolve: 'gatsby-plugin-material-ui',
-    },
-    'gatsby-plugin-resolve-src',
+    'gatsby-plugin-material-ui',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-offline',
-    'gatsby-plugin-sass',
     'gatsby-plugin-material-ui',
     'gatsby-plugin-twitter',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/data`,
         name: `data`,
+        path: `${__dirname}/src/data`,
       },
     },
     {
@@ -37,7 +33,6 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
@@ -56,8 +51,10 @@ module.exports = {
       resolve: 'gatsby-plugin-root-import',
       options: {
         src: `${__dirname}/src`,
+        assets: `${__dirname}/src/assets`,
         components: `${__dirname}/src/components`,
         pages: `${__dirname}/src/pages`,
+
       }
     },
     {

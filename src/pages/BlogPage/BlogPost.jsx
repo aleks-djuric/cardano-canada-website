@@ -93,7 +93,7 @@ class BlogPost extends React.Component {
 }
 
 export const query = graphql`
-  query($slug: String!) {
+  query MdxBlogPost($slug: String) {
     mdx(fields: { slug: { eq: $slug } }) {
       body
       frontmatter {
