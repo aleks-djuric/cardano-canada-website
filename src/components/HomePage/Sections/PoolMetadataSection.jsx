@@ -34,7 +34,7 @@ class PoolMetadataSection extends React.Component {
                         </Tooltip>
                       </Typography>
                       <Typography color="primary" align="center" gutterBottom>
-                        {" \u20B3 1,000,000" }
+                        {" \u20B3 376,680" }
                       </Typography>
                     </Grid>
                     <Grid item xs={12} md={3} style={{borderRight: '1px solid #837890'}}>
@@ -79,7 +79,7 @@ class PoolMetadataSection extends React.Component {
                     />
                     <CopyBox
                       label="POOL ID"
-                      textToCopy="f1b265f1e545da9c6e003c5d703fb5a23283c646cd40b2d619671e7f"
+                      textToCopy="0d8fb11358f653adc406c1508d27f9c1741c4eb06b75bef6d676489a"
                       popUpText="Pool ID copied to clipboard"
                     />
                   </Grid>
