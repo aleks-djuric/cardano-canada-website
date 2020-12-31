@@ -34,7 +34,7 @@ class PoolMetadataSection extends React.Component {
                         </Tooltip>
                       </Typography>
                       <Typography color="primary" align="center" gutterBottom>
-                        {" \u20B3 376,680" }
+                        {" \u20B3 836,840" }
                       </Typography>
                     </Grid>
                     <Grid item xs={12} md={3} style={{borderRight: '1px solid #837890'}}>
@@ -74,7 +74,7 @@ class PoolMetadataSection extends React.Component {
                   <Grid item xs={12} style={{paddingLeft: 20, paddingRight: 20}}>
                     <CopyBox
                       label="TICKER"
-                      textToCopy="MAPLE"
+                      textToCopy="POLAR"
                       popUpText="Ticker copied to clipboard"
                     />
                     <CopyBox
