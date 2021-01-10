@@ -43,6 +43,7 @@ class BlogPage extends React.Component {
   }
 }
 
-const style = {}
+const style = {
+}
 
 export default withStyles(style)(BlogPage);

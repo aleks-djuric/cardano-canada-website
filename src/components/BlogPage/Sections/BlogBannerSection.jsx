@@ -26,7 +26,7 @@ class BlogBannerSection extends React.Component {
           <Grid item xs={4}>
             <img
               className={classes.image}
-              src={require("assets/img/leaf2.png")}
+              src={require("assets/img/leaf3.png")}
               alt="Maple Leaf Network"
             />
           </Grid>
@@ -38,8 +38,10 @@ class BlogBannerSection extends React.Component {
 
 const style = {
   section: {
-    background: "#E00404",
-    width: "100%",
+    backgroundImage: `url(${require("assets/img/blog-banner-background.png")})`,
+    backgroundPosition: 'center center',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
     marginTop: "60px",
   },
   text: {

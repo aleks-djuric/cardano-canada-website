@@ -14,7 +14,7 @@ class FeaturedArticlesSection extends React.Component {
     return (
       <div className={classes.container}>
         <Typography variant="h2" color="primary" align="center" style={{ margin: "35px" }}>
-          - Featured posts -
+          Featured posts
         </Typography>
         <Grid container spacing={4}>
           {

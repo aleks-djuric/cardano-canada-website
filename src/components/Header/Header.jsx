@@ -14,7 +14,6 @@ import Drawer from "@material-ui/core/Drawer";
 import Menu from "@material-ui/icons/Menu";
 
 import {
-  container,
   defaultFont,
   primaryColor,
   transition,
@@ -190,7 +189,11 @@ const style = {
     zIndex: "1100"
   },
   container: {
-    ...container,
+    paddingRight: "30px",
+    paddingLeft: "30px",
+    marginRight: "auto",
+    marginLeft: "auto",
+    width: "100%",
     minHeight: "50px",
     flex: "1",
     alignItems: "center",

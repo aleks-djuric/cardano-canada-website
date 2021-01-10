@@ -35,7 +35,7 @@ class AboutPage extends React.Component {
           }}
           {...rest}
         />
-        <Parallax image={require('assets/img/toronto-skyline/aerial-view-of-toronto.jpg')}>
+        <Parallax image={require('assets/img/toronto-sunrise.png')}>
           <Grid container justify="flex-end" alignItems="center" className={classes.textGrid}>
             <Grid item xs={12}>
               <Typography variant="h1" color="primary" align="right">
