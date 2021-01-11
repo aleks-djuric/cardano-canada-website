@@ -27,7 +27,7 @@ class ProductSection extends React.Component {
             <Grid item xs={9}>
               <Typography variant="body1" color="textSecondary">
                 Cardano Canada is commited to offering the very best staking experience.
-                Our fundamental goal is to promote the adoption of decentralized technologies
+                Our fundamental goal is to promote the adoption of decentralized technology
                 by supporting and raising awareness of the Cardano ecosystem. We believe
                 blockchain will ultimately reinvent the architecture of society, creating
                 a more equitable, sustainable and beautiful world.

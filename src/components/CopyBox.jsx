@@ -18,8 +18,8 @@ class CopyBox extends React.Component {
     this.state = {open: false};
   }
 
-  copyToClipboard() {
-    navigator.clipboard.writeText("MAPLE");
+  copyToClipboard(textToCopy) {
+    navigator.clipboard.writeText(textToCopy);
     this.setState({open: true});
   };
 
@@ -46,7 +46,7 @@ class CopyBox extends React.Component {
               <Divider orientation="vertical" flexItem className={classes.divider}/>
               <Grid item>
                 <Button
-                  onClick={() => this.copyToClipboard()}
+                  onClick={() => this.copyToClipboard(textToCopy)}
                   color="white"
                   className={classes.navLink}
                 >
