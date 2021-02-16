@@ -10,6 +10,7 @@ module.exports = {
     'gatsby-plugin-offline',
     'gatsby-plugin-material-ui',
     'gatsby-plugin-twitter',
+    `gatsby-remark-images`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -24,7 +25,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 630,
+              maxWidth: 1200,
             },
           },
           {
