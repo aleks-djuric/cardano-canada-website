@@ -34,7 +34,7 @@ class PoolMetadataSection extends React.Component {
                         </Tooltip>
                       </Typography>
                       <Typography color="primary" align="center" gutterBottom>
-                        {" \u20B3 3,002,257" }
+                        {" \u20B3 5,767,031" }
                       </Typography>
                     </Grid>
                     <Grid item xs={12} md={3} style={{borderRight: '1px solid #837890'}}>
